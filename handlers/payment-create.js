@@ -25,6 +25,7 @@ module.exports = async (req, res, next) => {
                 req.notify = payment.id;
                 res.json(payment);
                 global.logger.info(`Payment created ${payment}`);
+                next();
             })
     } catch (err) {
         next(err);
