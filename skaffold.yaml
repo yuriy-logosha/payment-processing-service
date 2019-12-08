@@ -1,0 +1,13 @@
+apiVersion: skaffold/v1beta15
+kind: Config
+build:
+  artifacts:
+    - image: payment-processing-service
+  local:
+    push: true
+    useBuildkit: false
+    useDockerCLI: true
+deploy:
+  kubectl:
+    manifests:
+      - k8s/**
