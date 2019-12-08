@@ -1,0 +1,20 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 120
+      arrivalRate: 20
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+scenarios:
+  - flow:
+    - post:
+          url: "/"
+          json:
+            amount: 100
+            currency: "EUR"
+            debtor_iban: "EE061256142117251146"
+            creditor_iban: "EE411217896463868358"
+            details: "details..."
+
+

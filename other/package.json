@@ -1,0 +1,12 @@
+{
+  "name": "other-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.other.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "~4.16.1"
+  }
+}
