@@ -8,7 +8,7 @@ const { ipResolver } = require('./handlers/ip-resolver');
 var tsFormat = () => (new Date()).toLocaleTimeString();
 
 const logger = winston.createLogger({
-    level: 'info',
+    level: process.env.LOG_LEVEL || 'info',
     // format: winston.format.json(),
     exitOnError: false,
     transports: [

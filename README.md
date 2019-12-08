@@ -63,3 +63,17 @@ Steps to prepare database.
 ## Testing
 Present integration tests as it's covering almost all business logic.
 While application configured, up and running, then from root folder run `npm test`. It will start `Jest` testing framework. Tests will check ability to store data to database, retrieve required entities and modify them. For performance tests run command: `npm run-script test-perf`. Notification and IP-resolving logic excluded from tests.
+
+## Logging
+Default logging level is INFO. For easiest integration with logging analyzers, format JSON. Logger sending logs to 3 places: console and 2 files. One file for all logs another one only for errors.
+Use `LOG_LEVEL` in .env for set proper logging level.
+```text
+    emerg 
+    alert 
+    crit 
+    error 
+    warning 
+    notice 
+    info 
+    debug
+```
