@@ -310,23 +310,3 @@ describe('Payment cancellation.', () => {
 
     // });
 });
-
-
-frisby.globalSetup({
-    request: {
-        timeout: 60000
-    }
-});
-
-
-// n = 10000
-// it('Performance test: Should be able to save payments of Type 1, ' + n + ' times.', function () {
-//     let startTime = Date.now();
-//     console.log("Performance cycle started at " + Date(startTime).toString());
-//     for (let i = 0; i < n; i++) {
-//         request.post(serviceURI, jsonType1, (err, res) => { console.log(err) });
-//     }
-//     console.log("Performance cycle finished at " + Date(Date.now()).toString());
-//     console.log("Testing took " + Date(Date.now() - startTime).toString());
-//     console.log("Result " + ((Date.now() - startTime) / 1000 / n / 60 / 60));
-// });
